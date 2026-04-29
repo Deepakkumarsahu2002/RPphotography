@@ -39,7 +39,7 @@ const PackagesPreview = () => (
             <h3 className="font-heading text-2xl mb-3 group-hover:text-gold transition-colors duration-300">{pkg.name}</h3>
             <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{pkg.description}</p>
             {pkg.price && (
-              <p className="font-heading text-2xl text-gold mb-6">Starting at {pkg.price}</p>
+              <p className="font-heading text-2xl text-gold mb-6">Starting from {pkg.price}</p>
             )}
             
             <Link

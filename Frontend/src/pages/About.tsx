@@ -43,19 +43,19 @@ const About = () => (
               <p className="section-subtitle mb-2 sm:mb-3">About</p>
               <h1 className="section-title text-3xl sm:text-4xl md:text-4xl">RP PHOTOGRAPHY</h1>
               <div className="space-y-3 sm:space-y-4">
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                  At RP Opulence Photography, we believe that every moment tells a story—one that deserves to be captured with elegance, creativity, and precision. With over 10 years of professional experience in the photography industry, we have built a reputation for delivering exceptional visual storytelling that reflects both emotion and artistry.
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  At RP Opulence Photography, we believe that every moment tells a story one that deserves to be captured with elegance, creativity, and precision. With over 10 years of professional experience in the photography industry, we have built a reputation for delivering exceptional visual storytelling that reflects both emotion and artistry.
                 </p>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   Our journey has been defined by passion, innovation, and a commitment to excellence. Over the years, we have had the privilege of working with a diverse range of clients, capturing everything from timeless wedding moments to high-end portraits and cinematic shoots. Our work has also been recognized with multiple awards and accolades, highlighting our dedication to quality and creativity.
                 </p>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   At RP Opulence Photography, we use the latest equipment and advanced techniques to ensure every shot meets the highest professional standards. Our team focuses on understanding each client's vision and transforming it into stunning visuals that leave a lasting impression.
                 </p>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   We don't just take photographs—we create experiences, preserve memories, and deliver art that speaks for itself.
                 </p>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   Your moments, our masterpiece.
                 </p>
               </div>
@@ -93,10 +93,10 @@ const About = () => (
             <h2 className="section-title text-3xl sm:text-4xl md:text-5xl">The Art of Storytelling</h2>
           </div>
           <div className="space-y-4">
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Photography is the art of freezing time, capturing the essence of human emotion and connection. At RP Opulence Photography, we believe every image tells a story—a story of love, joy, triumph, and the beauty of life's fleeting moments.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Through our lens, we weave narratives that resonate deeply, blending technical mastery with creative vision. We use advanced techniques, from cinematic lighting to editorial composition, to create visuals that not only document events but also evoke feelings and memories that last a lifetime.
             </p>
           </div>
