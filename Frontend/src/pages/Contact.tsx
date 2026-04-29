@@ -218,8 +218,8 @@ const Contact = () => {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-2">Email</p>
-                        <a href="mailto:rsphotogellary.bnj@gmail.com" className="text-sm sm:text-base hover:text-gold transition-colors break-all">
-                          rsphotogellary.bnj@gmail.com
+                        <a href="mailto:rpphotography800@gmail.com" className="text-sm sm:text-base hover:text-gold transition-colors break-all">
+                          rpphotography800@gmail.com
                         </a>
                       </div>
                     </motion.div>
@@ -235,7 +235,7 @@ const Contact = () => {
                       <div className="flex-1">
                         <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-2">Address</p>
                         <p className="text-sm sm:text-base">
-                          Gandhinagar 6th Line, Berhampur
+                          Near SBI ATM, Jail Street, Lanjipalli, Berhampur, 760008
                         </p>
                       </div>
                     </motion.div>

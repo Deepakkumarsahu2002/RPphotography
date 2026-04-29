@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import photographerPortrait from "@/assets/photographer-portrait.jpg";
 
 const achievements = [
-  { number: "50+", label: "Weddings Captured" },
-  { number: "6+", label: "Years of Experience" },
-  { number: "5K+", label: "Photos Delivered" },
+  { number: "100+", label: "Weddings Captured" },
+  { number: "10+", label: "Years of Experience" },
+  { number: "10K+", label: "Photos Delivered" },
   { number: "100+", label: "5-Star Reviews" },
 ];
 
@@ -41,16 +41,22 @@ const About = () => (
               className="space-y-4 sm:space-y-6"
             >
               <p className="section-subtitle mb-2 sm:mb-3">About</p>
-              <h1 className="section-title text-3xl sm:text-4xl md:text-5xl">Rudra Prasad Swain</h1>
+              <h1 className="section-title text-3xl sm:text-4xl md:text-4xl">RP PHOTOGRAPHY</h1>
               <div className="space-y-3 sm:space-y-4">
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                  I am a professional wedding photographer based in Berhampur and Bhanjanagar, dedicated to capturing the beauty and emotion of your most cherished moments. With over 8 years of experience, I've had the privilege of documenting hundreds of love stories.
+                  At RP Opulence Photography, we believe that every moment tells a story—one that deserves to be captured with elegance, creativity, and precision. With over 10 years of professional experience in the photography industry, we have built a reputation for delivering exceptional visual storytelling that reflects both emotion and artistry.
                 </p>
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                  My style blends cinematic storytelling with candid, natural moments — creating a visual narrative that's as unique as your love story. I believe that the best photographs come from genuine emotions, not posed perfection.
+                  Our journey has been defined by passion, innovation, and a commitment to excellence. Over the years, we have had the privilege of working with a diverse range of clients, capturing everything from timeless wedding moments to high-end portraits and cinematic shoots. Our work has also been recognized with multiple awards and accolades, highlighting our dedication to quality and creativity.
                 </p>
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                  Every wedding is a new chapter, and I approach each one with fresh eyes, creative vision, and an unwavering commitment to excellence.
+                  At RP Opulence Photography, we use the latest equipment and advanced techniques to ensure every shot meets the highest professional standards. Our team focuses on understanding each client's vision and transforming it into stunning visuals that leave a lasting impression.
+                </p>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  We don't just take photographs—we create experiences, preserve memories, and deliver art that speaks for itself.
+                </p>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Your moments, our masterpiece.
                 </p>
               </div>
             </motion.div>
@@ -88,10 +94,10 @@ const About = () => (
           </div>
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              Photography is more than just taking pictures — it's about preserving the feeling of a moment forever. Every glance, every tear of joy, every burst of laughter tells part of your story.
+              Photography is the art of freezing time, capturing the essence of human emotion and connection. At RP Opulence Photography, we believe every image tells a story—a story of love, joy, triumph, and the beauty of life's fleeting moments.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              I combine technical precision with artistic intuition to create images that are not just beautiful, but deeply meaningful. Using natural light, thoughtful composition, and an editorial eye, I craft photographs that belong in both your heart and on gallery walls.
+              Through our lens, we weave narratives that resonate deeply, blending technical mastery with creative vision. We use advanced techniques, from cinematic lighting to editorial composition, to create visuals that not only document events but also evoke feelings and memories that last a lifetime.
             </p>
           </div>
         </div>

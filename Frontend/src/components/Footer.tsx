@@ -7,7 +7,7 @@ const Footer = () => {
     { icon: Instagram, href: "https://www.instagram.com/rp_photography_123", label: "Instagram" },
     { icon: Youtube, href: "https://youtube.com/@rpphotography-800", label: "YouTube" },
     { icon: Facebook, href: "https://www.facebook.com/rs.rudra.564357/", label: "Facebook" },
-    { icon: Mail, href: "mailto:rsphotogellary.bnj@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:rpphotography800@gmail.com", label: "Email" },
   ];
 
   const containerVariants = {
@@ -44,7 +44,7 @@ const Footer = () => {
               RP <span className="text-gold">Photography</span>
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed tracking-wide mb-6">
-              Capturing timeless moments with elegance and artistry. By Rudra Prasad.
+              Capturing timeless moments with elegance and artistry. Founded By Rudra Prasad.
             </p>
             
             {/* Social Icons - Below Brand */}
@@ -94,10 +94,10 @@ const Footer = () => {
               <div className="flex items-start gap-3 group">
                 <Mail size={15} className="text-gold mt-1 group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
                 <a
-                  href="mailto:rsphotogellary.bnj@gmail.com"
+                  href="mailto:rpphotography800@gmail.com"
                   className="text-sm text-gray-300 hover:text-gold transition-colors tracking-wide break-all"
                 >
-                  rsphotogellary.bnj@gmail.com
+                  rpphotography800@gmail.com
                 </a>
               </div>
 
@@ -105,7 +105,7 @@ const Footer = () => {
               <div className="flex items-start gap-3 group">
                 <Phone size={15} className="text-gold mt-1 group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
                 <a
-                  href="tel:+918093111800"
+                  href="https://wa.me/918093111800"
                   className="text-sm text-gray-300 hover:text-gold transition-colors tracking-wide"
                 >
                   +91 8093111800
@@ -127,8 +127,8 @@ const Footer = () => {
               <div className="flex items-start gap-3 group">
                 <MapPin size={15} className="text-gold mt-1 group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
                 <p className="text-sm text-gray-300 leading-relaxed tracking-wide">
-                  Gandhinagar 6th Line,<br />
-                  Berhampur
+                  Near SBI ATM, Jail Street,<br />
+                  Lanjipalli, Berhampur, 760008
                 </p>
               </div>
             </div>

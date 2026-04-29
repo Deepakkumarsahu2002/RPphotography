@@ -23,13 +23,13 @@ const AboutPreview = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="section-subtitle mb-3">The Artist</p>
-          <h2 className="section-title mb-6">Rudra Prasad</h2>
+          <p className="section-subtitle mb-3">The Founder</p>
+          <h2 className="section-title mb-6">Rudra Prasad Swain</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-            With over 5 years of experience in wedding and portrait photography, I believe every love story deserves to be told with artistry and authenticity.
+            With over 10 years of experience in wedding and portrait photography, I believe every love story deserves to be told with artistry and authenticity.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed mb-8">
-            My approach blends cinematic storytelling with candid emotion — creating images that feel as timeless as the moments they capture.
+            My approach blends cinematic storytelling with candid emotion creating images that feel as timeless as the moments they capture.
           </p>
           <Link
             to="/about"
@@ -48,9 +48,9 @@ const AboutPreview = () => (
             className="grid grid-cols-2 gap-4"
           >
             {[
-              { stat: '50+', label: 'Weddings' },
-              { stat: '6+', label: 'Years Exp.' },
-              { stat: '5K+', label: 'Photos' },
+              { stat: '100+', label: 'Weddings' },
+              { stat: '10+', label: 'Years Exp.' },
+              { stat: '10K+', label: 'Photos' },
               { stat: '100+', label: '5-Star' },
             ].map((item, i) => (
               <motion.div
