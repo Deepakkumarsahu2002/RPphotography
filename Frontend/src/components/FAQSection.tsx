@@ -119,6 +119,41 @@ const FAQSection = () => {
           ))}
         </div>
 
+        <div className="mt-16 rounded-3xl border border-gold-muted/30 bg-card p-8 shadow-[0_30px_80px_rgba(194,151,44,0.08)]">
+          <div className="text-center mb-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-gold-dark font-semibold">Review Us</p>
+            <h3 className="text-2xl md:text-3xl font-heading font-bold mt-4">
+              Loved your experience? Share it on Google.
+            </h3>
+            <p className="max-w-2xl mx-auto mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
+              Your reviews help future couples discover our photography and video services. Scan the QR code below or click the button to leave us a Google review.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-[minmax(280px,1fr)_auto] items-center">
+            <div className="mx-auto max-w-xs">
+              <img
+                src="/review-qr.jpeg"
+                alt="Review us on Google QR code"
+                className="w-full h-auto rounded-3xl border border-gold-muted/20 shadow-xl"
+                loading="lazy"
+              />
+            </div>
+            <div className="flex flex-col items-center justify-center gap-4 text-center md:text-left">
+              <p className="text-base md:text-lg text-foreground font-medium">
+                Scan the QR code or tap the button below to open our review page.
+              </p>
+              <a
+                href="https://g.page/r/CQpOZ_20ROpKECk/review"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-gold-dark px-8 py-4 text-sm font-semibold text-background shadow-lg shadow-gold-dark/20 transition hover:bg-gold/90"
+              >
+                Leave a Google Review
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -126,10 +126,15 @@ const Footer = () => {
               {/* Address */}
               <div className="flex items-start gap-3 group">
                 <MapPin size={15} className="text-gold mt-1 group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
-                <p className="text-sm text-gray-300 leading-relaxed tracking-wide">
+                <a
+                  href="https://www.google.com/maps/place/RP+Opulence+Photography/@19.29946,84.8080259,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3d5b0c680fc9a1:0x4aea44b4fd674e0a!8m2!3d19.29946!4d84.8106008!16s%2Fg%2F11z7cs3xsd?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-300 leading-relaxed tracking-wide hover:text-gold transition-colors"
+                >
                   Near SBI ATM, Jail Street,<br />
                   Lanjipalli, Berhampur, 760008
-                </p>
+                </a>
               </div>
             </div>
           </motion.div>

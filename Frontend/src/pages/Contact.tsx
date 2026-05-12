@@ -234,9 +234,14 @@ const Contact = () => {
                       </div>
                       <div className="flex-1">
                         <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-2">Address</p>
-                        <p className="text-sm sm:text-base">
+                        <a
+                          href="https://www.google.com/maps/place/RP+Opulence+Photography/@19.29946,84.8080259,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3d5b0c680fc9a1:0x4aea44b4fd674e0a!8m2!3d19.29946!4d84.8106008!16s%2Fg%2F11z7cs3xsd?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm sm:text-base text-foreground hover:text-gold transition-colors"
+                        >
                           Near SBI ATM, Jail Street, Lanjipalli, Berhampur, 760008
-                        </p>
+                        </a>
                       </div>
                     </motion.div>
 
@@ -256,14 +261,14 @@ const Contact = () => {
                   Chat on WhatsApp
                 </motion.a>
 
-                {/* Map Placeholder */}
-                <div className="w-full h-72 md:h-80 bg-gradient-to-br from-card/50 to-card/30 border border-border rounded-xl overflow-hidden flex items-center justify-center group hover:border-gold/30 transition-all duration-300">
-                  <div className="text-center space-y-3">
-                    <MapPin size={32} className="mx-auto text-gold/50 group-hover:text-gold/70 transition-colors duration-300" />
-                    <p className="text-xs text-muted-foreground uppercase tracking-widest">
-                      Location Map
-                    </p>
-                  </div>
+                <div className="w-full h-72 md:h-80 overflow-hidden rounded-xl border border-border bg-card/50">
+                  <iframe
+                    title="RP Opulence Photography Location"
+                    src="https://maps.google.com/maps?q=19.29946,84.8106008&z=17&output=embed"
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </motion.div>
 
