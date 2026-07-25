@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Upload, Trash2, Plus, LogOut, ArrowLeft, Camera, Film, LayoutDashboard, Image, Video } from "lucide-react";
+import { Upload, Trash2, Plus, LogOut, ArrowLeft, Camera, Film, LayoutDashboard, Image, Video, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
+import AdminBillGenerator from "./AdminBillGenerator";
 
 const AdminLogin = ({ onLogin }: { onLogin: () => void }) => {
   const [email, setEmail] = useState("");
@@ -82,7 +83,7 @@ const AdminLogin = ({ onLogin }: { onLogin: () => void }) => {
 };
 
 const AdminDashboard = ({ onLogout }: { onLogout: () => void }) => {
-  const [activeTab, setActiveTab] = useState<"images" | "videos">("images");
+  const [activeTab, setActiveTab] = useState<"images" | "videos" | "bills">("images");
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [category, setCategory] = useState("");
@@ -166,6 +167,7 @@ const AdminDashboard = ({ onLogout }: { onLogout: () => void }) => {
   const tabs = [
     { key: "images" as const, label: "Images", icon: Image },
     { key: "videos" as const, label: "Videos", icon: Video },
+    { key: "bills" as const, label: "Bill Generator", icon: FileText },
   ];
 
   return (
@@ -375,6 +377,13 @@ const AdminDashboard = ({ onLogout }: { onLogout: () => void }) => {
                 </motion.div>
               ))}
             </div>
+          </motion.div>
+        )}
+
+        {/* ── BILL GENERATOR TAB ── */}
+        {activeTab === "bills" && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
+            <AdminBillGenerator />
           </motion.div>
         )}
       </div>
