@@ -73,12 +73,13 @@ const AdminBillGenerator = () => {
   const [downloading, setDownloading] = useState(false);
 
   const [invoice, setInvoice] = useState({
-    invoiceNumber: "RPOP-2026-0003",
+    invoiceNumber: "RPOP-2026-0001",
     invoiceDate: new Date().toISOString().slice(0, 10),
     status: "DRAFT",
   });
 
   const [client, setClient] = useState({ name: "", mobile: "", location: "" });
+  const [bookingAmount, setBookingAmount] = useState<number | string>(0);
   const [advancePaid, setAdvancePaid] = useState<number | string>(0);
   const [paymentNotes, setPaymentNotes] = useState("CASH / ONLINE");
   const [remarks, setRemarks] = useState("");
@@ -112,7 +113,7 @@ const AdminBillGenerator = () => {
     return sum + (Number(it?.rate) || 0) * (Number(it?.qty) || 1);
   }, 0);
 
-  const subtotal = itemsTotal;
+  const subtotal = itemsTotal + Number(bookingAmount || 0);
   const balanceDue = subtotal - Number(advancePaid || 0);
 
   const handleDownload = () => {
@@ -207,6 +208,30 @@ const AdminBillGenerator = () => {
                 onChange={(e) => setClient({ ...client, location: e.target.value })}
               />
             </div>
+          </div>
+        </div>
+
+        {/* Booking Amount - compulsory, always shown first */}
+        <h4 className="text-xs uppercase tracking-[0.2em] text-gold-dark mb-3">
+          Booking Amount <span className="text-red-500">*</span>
+        </h4>
+        <div className="grid grid-cols-1 gap-4 mb-6">
+          <div>
+            <label className={labelClass}>
+              Booking Amount (Rs.) <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="number"
+              required
+              className={`${inputClass} ${
+                !bookingAmount ? "border-red-400/70" : "border-gold-muted"
+              }`}
+              value={bookingAmount}
+              onChange={(e) => setBookingAmount(e.target.value)}
+            />
+            <p className="text-[10px] text-muted-foreground mt-1">
+              Mandatory field — shown as the first line item on every invoice.
+            </p>
           </div>
         </div>
 
@@ -368,6 +393,15 @@ const AdminBillGenerator = () => {
               </tr>
             </thead>
             <tbody>
+              <tr style={{ borderBottom: "1px solid #eee" }}>
+                <td style={{ padding: "8px 6px", fontWeight: 700, fontSize: 11 }}>BOOKING AMOUNT</td>
+                <td style={{ padding: "8px 6px", fontSize: 11 }}>Booking Amount</td>
+                <td style={{ padding: "8px 6px", fontSize: 11 }}>-</td>
+                <td style={{ padding: "8px 6px", fontSize: 11 }}>- - -</td>
+                <td style={{ padding: "8px 6px", fontSize: 11 }}>{currency(bookingAmount)}</td>
+                <td style={{ padding: "8px 6px", fontSize: 11 }}>1</td>
+                <td style={{ padding: "8px 6px", fontWeight: 700, fontSize: 11 }}>{currency(bookingAmount)}</td>
+              </tr>
               {selectedOccasions.map((name) => {
                 const it = items[name] as OccasionItem;
                 const amount = (Number(it.rate) || 0) * (Number(it.qty) || 1);
